@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO  (edit description / title for your store)
+  ============================================================ -->
+  <title>FC Saree Store | Elegant Sarees in Sri Lanka</title>
+  <meta name="description" content="FC Saree Store — premium bridal, silk, cotton and party wear sarees in Sri Lanka. Shop elegant sarees for weddings, festivals and every special moment." />
+  <meta name="keywords" content="saree store sri lanka, bridal saree, silk saree, cotton saree, party wear saree, FC Saree Store" />
+
+  <!-- Open Graph (for Facebook / social sharing) — REPLACE the og:image with your real domain later -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FC Saree Store | Elegance Woven for You" />
+  <meta property="og:description" content="Discover beautiful sarees for every special moment. Premium sarees delivered across Sri Lanka." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:locale" content="en_LK" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== 1. NAVIGATION BAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="FC Saree Store home">
+        <span class="logo-mark">FC</span>
+        <span class="logo-text">Saree <em>Store</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#sarees" class="nav-link">Sarees</a>
+        <a href="#sarees" class="nav-link" data-filter-link="new">New Arrivals</a>
+        <a href="#sarees" class="nav-link" data-filter-link="best">Best Sellers</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open shopping cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== 2. HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <!-- ► REPLACE images/hero.jpg with your own banner photo -->
+    <img src="images/hero.jpg" alt="Elegant model wearing a premium FC Saree Store silk saree" class="hero-img" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow reveal">Sri Lanka's Premium Saree Boutique</p>
+      <h1 class="hero-title reveal">Elegance <span>Woven</span> for You</h1>
+      <p class="hero-sub reveal">Discover beautiful sarees for every special moment.</p>
+      <div class="hero-btns reveal">
+        <a href="#sarees" class="btn btn-gold">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#categories" class="btn btn-outline">View Collection</a>
+      </div>
+    </div>
+    <a href="#categories" class="scroll-hint" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ===================== 3. FEATURED CATEGORIES ===================== -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Curated for You</p>
+        <h2 class="section-title">Featured Categories</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-gem"></i><span></span></div>
+      </div>
+
+      <div class="category-grid">
+        <!-- ► To add/replace a category: change the image, name and data-category -->
+        <a href="#sarees" class="category-card reveal" data-category-link="bridal">
+          <img src="images/golden-bridal.jpg" alt="Bridal sarees collection" />
+          <div class="category-info"><h3>Bridal Sarees</h3><span class="explore">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </a>
+        <a href="#sarees" class="category-card reveal" data-category-link="party">
+          <img src="images/cat-party.jpg" alt="Party wear sarees collection" />
+          <div class="category-info"><h3>Party Wear</h3><span class="explore">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </a>
+        <a href="#sarees" class="category-card reveal" data-category-link="cotton">
+          <img src="images/cat-cotton.jpg" alt="Cotton sarees collection" />
+          <div class="category-info"><h3>Cotton Sarees</h3><span class="explore">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </a>
+        <a href="#sarees" class="category-card reveal" data-category-link="silk">
+          <img src="images/maroon-traditional.jpg" alt="Silk sarees collection" />
+          <div class="category-info"><h3>Silk Sarees</h3><span class="explore">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </a>
+        <a href="#sarees" class="category-card reveal" data-category-link="casual">
+          <img src="images/cat-casual.jpg" alt="Casual sarees collection" />
+          <div class="category-info"><h3>Casual Sarees</h3><span class="explore">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </a>
+        <a href="#sarees" class="category-card reveal" data-category-link="new">
+          <img src="images/cat-new.jpg" alt="New arrivals sarees collection" />
+          <div class="category-info"><h3>New Arrivals</h3><span class="explore">Explore <i class="fa-solid fa-arrow-right"></i></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 4 & 5. PRODUCTS + SEARCH / FILTER / SORT ===================== -->
+  <section class="section section-cream" id="sarees">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Collection</p>
+        <h2 class="section-title">Shop Sarees</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-gem"></i><span></span></div>
+      </div>
+
+      <!-- Search -->
+      <div class="shop-toolbar reveal">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="searchInput" placeholder="Search sarees by name, category or price..." aria-label="Search sarees" />
+        </div>
+        <div class="toolbar-row">
+          <!-- Price filters -->
+          <div class="filter-group" role="group" aria-label="Price filters">
+            <button class="chip active" data-price="all">All</button>
+            <button class="chip" data-price="under10k">Under LKR 10,000</button>
+            <button class="chip" data-price="10k-15k">LKR 10,000–15,000</button>
+            <button class="chip" data-price="above15k">Above LKR 15,000</button>
+          </div>
+          <!-- Sort -->
+          <select id="sortSelect" class="sort-select" aria-label="Sort products">
+            <option value="featured">Sort: Featured</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+            <option value="newest">Newest</option>
+            <option value="popular">Popular</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product cards are rendered here by script.js -->
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="no-results" id="noResults" hidden><i class="fa-regular fa-face-frown"></i> No sarees found. Try a different search.</p>
+    </div>
+  </section>
+
+  <!-- ===================== 6. SPECIAL OFFER BANNER ===================== -->
+  <section class="offer">
+    <div class="offer-pattern"></div>
+    <div class="container offer-inner reveal">
+      <p class="eyebrow light">Limited Time</p>
+      <h2>Special Weekend Offer</h2>
+      <p class="offer-text">Get <strong>15% OFF</strong> on selected sarees</p>
+
+      <!-- Countdown timer (driven by script.js) -->
+      <div class="countdown" id="countdown" aria-label="Offer countdown">
+        <div class="count-box"><span id="cdDays">00</span><small>Days</small></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><span id="cdHours">00</span><small>Hours</small></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><span id="cdMins">00</span><small>Mins</small></div>
+        <div class="count-sep">:</div>
+        <div class="count-box"><span id="cdSecs">00</span><small>Secs</small></div>
+      </div>
+
+      <a href="#sarees" class="btn btn-gold" id="shopOfferBtn">Shop Offer <i class="fa-solid fa-tags"></i></a>
+    </div>
+  </section>
+
+  <!-- ===================== 7. ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-img reveal">
+        <img src="images/about.jpg" alt="Woman wearing an elegant maroon saree from FC Saree Store" />
+        <div class="about-frame"></div>
+      </div>
+      <div class="about-content reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title left">About FC Saree Store</h2>
+        <p class="about-text">FC Saree Store brings together elegant sarees selected for women who love timeless beauty, quality, and style. From traditional designs to modern fashion sarees, we offer beautiful choices for every occasion.</p>
+        <div class="feature-boxes">
+          <div class="feature-box"><i class="fa-solid fa-award"></i><h4>Premium Quality</h4><p>Hand-checked fabrics and finishing.</p></div>
+          <div class="feature-box"><i class="fa-solid fa-wand-magic-sparkles"></i><h4>Elegant Designs</h4><p>Classic &amp; contemporary collections.</p></div>
+          <div class="feature-box"><i class="fa-solid fa-heart"></i><h4>Customer Satisfaction</h4><p>Friendly support, easy ordering.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 8. CUSTOMER REVIEWS ===================== -->
+  <section class="section section-cream" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Testimonials</p>
+        <h2 class="section-title">Loved by Our Customers</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-gem"></i><span></span></div>
+      </div>
+      <div class="review-grid">
+        <figure class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>“Beautiful sarees and excellent quality!”</blockquote>
+          <figcaption><strong>Nadeesha Perera</strong><span>Colombo</span></figcaption>
+        </figure>
+        <figure class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>“The design was even more beautiful in person.”</blockquote>
+          <figcaption><strong>Tharushi Fernando</strong><span>Kandy</span></figcaption>
+        </figure>
+        <figure class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>“Fast service and very helpful customer support.”</blockquote>
+          <figcaption><strong>Sanduni Silva</strong><span>Galle</span></figcaption>
+        </figure>
+        <figure class="review-card reveal">
+          <div class="stars" aria-label="4 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <blockquote>“Ordered a bridal saree for my sister — simply stunning!”</blockquote>
+          <figcaption><strong>Hashini Jayawardena</strong><span>Negombo</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 9. SOCIAL GALLERY ===================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Stay Inspired</p>
+        <h2 class="section-title">From Our Collection</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-gem"></i><span></span></div>
+      </div>
+      <div class="gallery-grid reveal">
+        <!-- ► Swap these with your real Instagram/Facebook photos -->
+        <img src="images/pink-floral.jpg" alt="Floral pink saree from FC Saree Store gallery" />
+        <img src="images/purple-luxury.jpg" alt="Purple pattu silk saree from FC Saree Store gallery" />
+        <img src="images/green-cotton.jpg" alt="Soft green cotton saree from FC Saree Store gallery" />
+        <img src="images/black-premium.jpg" alt="Premium black saree from FC Saree Store gallery" />
+        <img src="images/gallery-1.jpg" alt="Elegant black saree from FC Saree Store gallery" />
+        <img src="images/hero.jpg" alt="Pink gold kanjivaram saree from FC Saree Store gallery" />
+      </div>
+      <div class="gallery-cta reveal">
+        <!-- ► REPLACE href with your real Facebook page URL (also in CONFIG in script.js) -->
+        <a href="https://facebook.com/fcsareestore" target="_blank" rel="noopener" class="btn btn-maroon">
+          <i class="fa-brands fa-facebook-f"></i> Follow Us on Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 10. CONTACT ===================== -->
+  <section class="section section-cream" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-gem"></i><span></span></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- ► REPLACE the placeholder phone, email, address & WhatsApp link below -->
+        <div class="contact-info reveal">
+          <h3><i class="fa-solid fa-location-dot"></i> FC Saree Store</h3>
+          <p>123, Galle Road, Colombo 03, Sri Lanka</p>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+94112345678">+94 11 234 5678</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@fcsareestore.lk">info@fcsareestore.lk</a></li>
+            <li><i class="fa-brands fa-facebook-f"></i> <a href="https://facebook.com/fcsareestore" target="_blank" rel="noopener">facebook.com/fcsareestore</a></li>
+            <li><i class="fa-solid fa-clock"></i> Open Daily: 9.00 AM – 8.00 PM</li>
+          </ul>
+          <a class="btn btn-whatsapp" href="https://wa.me/947XXXXXXXX" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cName">Name</label>
+              <input type="text" id="cName" name="name" placeholder="Your name" required />
+              <small class="error-msg"></small>
+            </div>
+            <div class="form-group">
+              <label for="cPhone">Phone</label>
+              <input type="tel" id="cPhone" name="phone" placeholder="07X XXX XXXX" required />
+              <small class="error-msg"></small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" name="email" placeholder="you@example.com" required />
+            <small class="error-msg"></small>
+          </div>
+          <div class="form-group">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+            <small class="error-msg"></small>
+          </div>
+          <button type="submit" class="btn btn-gold full"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 11. FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#home" class="logo light"><span class="logo-mark">FC</span><span class="logo-text">Saree <em>Store</em></span></a>
+        <p class="footer-about">Premium sarees for weddings, parties, festivals and everyday elegance — delivered across Sri Lanka.</p>
+        <div class="socials">
+          <a href="https://facebook.com/fcsareestore" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/fcsareestore" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/947XXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a><a href="#sarees">Sarees</a><a href="#categories">Categories</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <a href="#contact">Delivery Info</a><a href="#contact">Returns &amp; Exchanges</a><a href="#contact">Size Guide</a><a href="#contact">FAQs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 123, Galle Road, Colombo 03</p>
+        <p><i class="fa-solid fa-phone"></i> +94 11 234 5678</p>
+        <p><i class="fa-solid fa-envelope"></i> info@fcsareestore.lk</p>
+        <p><i class="fa-solid fa-clock"></i> Open Daily 9 AM – 8 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FC Saree Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== SHOPPING CART DRAWER ===================== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="cart-items" id="cartItems"><!-- items injected by script.js --></div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-line"><span>Subtotal</span><span id="cartSubtotal">LKR 0</span></div>
+      <div class="cart-line"><span>Delivery</span><span id="cartDelivery">LKR 0</span></div>
+      <div class="cart-line total"><span>Grand Total</span><span id="cartTotal">LKR 0</span></div>
+      <button class="btn btn-whatsapp full" id="checkoutBtn"><i class="fa-brands fa-whatsapp"></i> Proceed to WhatsApp Order</button>
+      <button class="btn btn-outline-dark full" id="continueBtn">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <!-- ===================== PRODUCT DETAILS MODAL ===================== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <button class="modal-close" id="modalClose" aria-label="Close product details"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modalBody"><!-- injected by script.js --></div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
